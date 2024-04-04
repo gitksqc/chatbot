@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>搜索结果</title>
+</head>
+
+<body>
+    
+    {% for item in result %}
+    <div style="margin: 30px;">
+        <div><label style="font-weight: bold;">标题：</label>{{ item['question'] }}</div>
+        <br/>
+        <div><label style="font-weight: bold;">描述：</label>{{ item['answer'] }}</div>
+        <!-- <div><label style="font-weight: bold;">截图：</label></div> -->
+    </div>
+    <hr />
+    {% endfor %}
+
+</body>
+
+</html>
